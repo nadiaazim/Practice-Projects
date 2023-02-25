@@ -1,0 +1,47 @@
+.navbar {
+  width: 100%;
+  background-color: black;
+  height: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.home-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-nav__title {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+}
+.home-challenges {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-challenges__link-image {
+  width: 14rem;
+  height: 14rem;
+  background: lightgrey;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1.875rem;
+  content: url("/project-assets/QR-code-component/images/styleguide-mobile-design.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.home-challenges__link-image:hover {
+  margin-top: 0.5rem;
+}
+.home-challenges__link-container {
+  margin: 3.5rem 4rem;
+}/*# sourceMappingURL=home.css.map */

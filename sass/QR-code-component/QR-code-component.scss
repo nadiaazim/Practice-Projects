@@ -1,0 +1,92 @@
+@import '../shared/navbar';
+@import '../shared/global';
+
+//colors
+$bg-color: #D5E1EF;
+$accent-blue: #3484FF;
+$accent-yellow: #e0c305;
+$font-blue: #252C3F;
+$font-gray: #9B9DA9;
+
+//typography
+@font-face {
+    font-family: outfit-bold;
+    src: url("/project-assets/QR-code-component/fonts/Outfit-Bold.ttf");
+}
+
+@font-face {
+    font-family: outfit-regular;
+    src: url("/project-assets/QR-code-component/fonts/Outfit-Regular.ttf");
+}
+
+.qr-challenge {
+    background-color: $bg-color;
+    min-height: 94vh;
+    display: flex;
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $font-blue;
+
+        &__home {
+            &-icon {
+                height: 1rem;
+                width: 1rem;
+                filter: invert(1);
+                padding-left: 1rem;
+            }
+        }
+
+        &__link {
+            text-decoration: unset;
+
+            &-title {
+                color: white;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                letter-spacing: 1px;
+
+                &:hover {
+                    color: $accent-yellow;
+                }
+            }
+
+        }
+    }
+
+    &__card {
+        height: 28rem;
+        width: 18rem;
+        background-color: white;
+        border-radius: 30px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-image {
+            height: 16rem;
+            margin: 1rem;
+            border-radius: inherit;
+            object-fit: cover;
+        }
+
+        &-content {
+            margin: 0.5rem 1.5rem;
+            font-size: 1.05rem;
+            color: $font-blue;
+            font-family: outfit-bold;
+            text-align: center;
+        }
+
+        &-subcontent {
+            margin: 0.5rem 1.5rem;
+            font-size: 1.05rem;
+            color: $font-gray;
+            font-family: outfit-regular;
+            text-align: center;
+
+        }
+    }
+}
